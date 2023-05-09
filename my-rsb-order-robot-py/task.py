@@ -48,14 +48,6 @@ def fill_and_submit_the_order(order):
     receiptImage = f"{os.getcwd()}/output/receipt-for-order-number-{orderNum}.png"
     browser.take_screenshot(filename=receiptImage,
                             selector="id=receipt")
-    pdf = PDF()
-
-    try:
-        pdf.add_files_to_pdf(
-            files=receiptImage,
-            target_document="output/merged-doc.pdf")
-    except Exception as e: print(e)
-
 
 def fill_the_form_using_the_data_from_the_csv_file():
     with open(f"{os.getcwd()}/orders.csv", mode='r')as file:
@@ -66,17 +58,8 @@ def fill_the_form_using_the_data_from_the_csv_file():
             browser.click("id=order-another")
             close_modal_popup()
 
-
-def export_the_table_as_a_pdf():
-    sales_results_html = browser.get_property(
-        selector="css=#sales-results", property="outerHTML")
-    pdf = PDF()
-    pdf.html_to_pdf(sales_results_html, "output/sales_results.pdf")
-
-
 def log_out():
     browser.click("text=Log out")
-
 
 def main():
     try:
@@ -84,7 +67,6 @@ def main():
         close_modal_popup()
         download_the_csv_file()
         fill_the_form_using_the_data_from_the_csv_file()
-        export_the_table_as_a_pdf()
     finally:
         log_out()
         browser.playwright.close()
