@@ -1,0 +1,26 @@
+{"level":30,"time":"2023-05-09T07:08:41.282Z","pid":22000,"hostname":"AV-L7300-783","msg":"Listening on 51196"}
+{"level":30,"time":"2023-05-09T07:08:41.335Z","pid":22000,"hostname":"AV-L7300-783","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-05-09T07:08:41.337Z","pid":22000,"hostname":"AV-L7300-783","msg":"currentBrowser: undefined"}
+{"level":30,"time":"2023-05-09T07:08:43.468Z","pid":22000,"hostname":"AV-L7300-783","msg":"Changed active context"}
+{"level":30,"time":"2023-05-09T07:08:43.798Z","pid":22000,"hostname":"AV-L7300-783","msg":"Video path: undefined"}
+{"level":30,"time":"2023-05-09T07:08:43.798Z","pid":22000,"hostname":"AV-L7300-783","msg":"Changed active page"}
+{"level":30,"time":"2023-05-09T07:08:48.140Z","pid":22000,"hostname":"AV-L7300-783","msg":"End of node method newPage"}
+{"level":30,"time":"2023-05-09T07:08:48.146Z","pid":22000,"hostname":"AV-L7300-783","msg":"Start of node method click"}
+{"level":30,"time":"2023-05-09T07:08:48.147Z","pid":22000,"hostname":"AV-L7300-783","msg":"Strict mode is enabled, find Locator with text=OK in page."}
+{"level":30,"time":"2023-05-09T07:08:48.237Z","pid":22000,"hostname":"AV-L7300-783","msg":"End of node method click"}
+{"level":30,"time":"2023-05-09T07:08:49.313Z","pid":22000,"hostname":"AV-L7300-783","msg":"Start of node method click"}
+{"level":30,"time":"2023-05-09T07:08:49.313Z","pid":22000,"hostname":"AV-L7300-783","msg":"Strict mode is enabled, find Locator with text=Log out in page."}
+{"level":30,"time":"2023-05-09T07:08:59.331Z","pid":22000,"hostname":"AV-L7300-783","msg":"Error of node method  click"}
+================= Original suppressed error =================
+locator.click: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text=Log out"
+============================================================
+    at click (c:\ProgramData\robocorp\ht\e83383d_b1f3c24_09529949\lib\site-packages\Browser\wrapper\index.js:7130:17)
+    at async PlaywrightServer.click (c:\ProgramData\robocorp\ht\e83383d_b1f3c24_09529949\lib\site-packages\Browser\wrapper\index.js:8000:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2023-05-09T07:08:59.359Z","pid":22000,"hostname":"AV-L7300-783","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2023-05-09T07:08:59.366Z","pid":22000,"hostname":"AV-L7300-783","msg":"Removed page=6c4ccbf5-1801-41fe-99c8-bda419cd86fc from context=13a9a21a-d347-4575-9da0-1ddbd9de15d4 page stack"}
+{"level":30,"time":"2023-05-09T07:08:59.433Z","pid":22000,"hostname":"AV-L7300-783","msg":"End of node method closeAllBrowsers"}
